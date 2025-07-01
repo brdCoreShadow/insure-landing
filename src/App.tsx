@@ -7,6 +7,9 @@ import SharedLayout from "./layouts/SharedLayout/SharedLayout";
 import HowWeWork from "./components/HowWeWork/HowWeWork";
 import Footer from "./layouts/Footer/Footer";
 import SocNet from "./components/Socnet/SocNet";
+import ContactLinks from "./components/ContactLinks/ContactLinks";
+import OurCompany from "./components/ContactLinks/OurCompany/OurCompany";
+import HelpMe from "./components/ContactLinks/HelpMe/HelpMe";
 
 const App: React.FC = () => {
   const { toggleShare, isShare } = useToggle();
@@ -21,6 +24,10 @@ const App: React.FC = () => {
       </SharedLayout>
       <Footer>
         <SocNet />
+        <ContactLinks>
+          <OurCompany/>
+          <HelpMe/>
+        </ContactLinks>
       </Footer>
     </>
   );
