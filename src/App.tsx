@@ -12,14 +12,35 @@ import OurCompany from "./components/ContactLinks/OurCompany/OurCompany";
 import HelpMe from "./components/ContactLinks/HelpMe/HelpMe";
 import Contact from "./components/ContactLinks/Contact/Contact";
 import Others from "./components/ContactLinks/Others/Others";
+import Portal from "./components/Portal/Portal"
+import Menu from "./components/Menu/Menu";
+import { useEffect } from "react";
 
 const App: React.FC = () => {
   const { toggleShare, isShare } = useToggle();
+
+ useEffect(() => {
+    if (isShare) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isShare]);
 
   return (
     <>
       <Header isToggle={toggleShare} isMenu={isShare} />
       <SharedLayout>
+        {isShare ? 
+      <Portal>
+        <Menu/>
+      </Portal>
+      : null  
+      }
         <Hero />
         <About />
         <HowWeWork />
