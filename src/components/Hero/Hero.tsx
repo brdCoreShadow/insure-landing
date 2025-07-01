@@ -5,9 +5,9 @@ import introMob from "../../assets/images/image-intro-mobile.jpg";
 const Hero: React.FC = () => {
   return (
     <SC.HeroCon>
-      <div>
+      <SC.HeroIntroPicThumb>
         <img src={introMob} alt="intro" />
-      </div>
+      </SC.HeroIntroPicThumb>
       <SC.HeroContentCon>
         <SC.HeroTextWrapper>
             <h3>Humanizing your insurance.</h3>

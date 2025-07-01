@@ -1,10 +1,13 @@
 import styled from "@emotion/styled";
 
 export const HeroCon = styled.div`
-max-width: 375px;
 
-margin-left: auto;
-margin-right: auto;
+`
+
+export const HeroIntroPicThumb = styled.div`
+& > img{
+width: 100%;
+}
 `
 
 export const HeroContentCon = styled.div`
@@ -71,7 +74,7 @@ position: absolute;
 bottom: 0;
 right: 0;
 
-transform: translate(260px, 200px);
+transform: translate(70%, 50%);
 
 width: 100%;
 height: 355px;
