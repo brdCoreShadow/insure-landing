@@ -10,6 +10,8 @@ import SocNet from "./components/Socnet/SocNet";
 import ContactLinks from "./components/ContactLinks/ContactLinks";
 import OurCompany from "./components/ContactLinks/OurCompany/OurCompany";
 import HelpMe from "./components/ContactLinks/HelpMe/HelpMe";
+import Contact from "./components/ContactLinks/Contact/Contact";
+import Others from "./components/ContactLinks/Others/Others";
 
 const App: React.FC = () => {
   const { toggleShare, isShare } = useToggle();
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         <ContactLinks>
           <OurCompany/>
           <HelpMe/>
+          <Contact/>
+          <Others/>
         </ContactLinks>
       </Footer>
     </>

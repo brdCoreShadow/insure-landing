@@ -1,22 +1,24 @@
-const HelpMe = () => {
+import * as SC from "./HelpMeStyled"
+
+const HelpMe:React.FC = () => {
   return (
-    <div>
+    <SC.HelpMeCon>
       <h4>help me</h4>
       <ul>
-        <li>
+        <SC.HelpMeItem>
             <a href="#">faq</a>
-        </li>
-        <li>
+        </SC.HelpMeItem>
+        <SC.HelpMeItem>
             <a href="#">terms of use</a>
-        </li>
-        <li>
+        </SC.HelpMeItem>
+        <SC.HelpMeItem>
             <a href="#">privacy policy</a>
-        </li>
-        <li>
+        </SC.HelpMeItem>
+        <SC.HelpMeItem>
             <a href="#">cookies</a>
-        </li>
+        </SC.HelpMeItem>
       </ul>
-    </div>
+    </SC.HelpMeCon>
   );
 };
 
