@@ -12,6 +12,11 @@ padding-left: 24px;
 padding-right: 24px;
 
 background-color: #fff;
+
+@media (min-width: 1280px){
+    padding-left: 166px;
+    padding-right: 166px;
+}
 `
 
 export const HeaderLogoThumb = styled.div`
