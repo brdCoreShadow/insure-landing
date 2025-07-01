@@ -1,21 +1,29 @@
-import { useToggle } from "./hooks/useToggle"
+import { useToggle } from "./hooks/useToggle";
 
-import Header from "./layouts/Header/Header"
-import Hero from "./components/Hero/Hero"
-import About from "./components/About/About"
+import Header from "./layouts/Header/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import SharedLayout from "./layouts/SharedLayout/SharedLayout";
+import HowWeWork from "./components/HowWeWork/HowWeWork";
+import Footer from "./layouts/Footer/Footer";
+import SocNet from "./components/Socnet/SocNet";
 
+const App: React.FC = () => {
+  const { toggleShare, isShare } = useToggle();
 
-const App:React.FC = () => {
-
-const {toggleShare ,isShare} = useToggle()
-  
-return (
+  return (
     <>
-    <Header isToggle={toggleShare} isMenu={isShare}/>
-    <Hero/>
-    <About/>
+      <Header isToggle={toggleShare} isMenu={isShare} />
+      <SharedLayout>
+        <Hero />
+        <About />
+        <HowWeWork />
+      </SharedLayout>
+      <Footer>
+        <SocNet />
+      </Footer>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
