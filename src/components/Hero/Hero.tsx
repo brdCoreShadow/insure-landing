@@ -14,6 +14,7 @@ const Hero: React.FC = () => {
             <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
         </SC.HeroTextWrapper>
         <SC.HeroButton type="button">View plans</SC.HeroButton>
+        <SC.BackWrapper></SC.BackWrapper>
       </SC.HeroContentCon>
     </SC.HeroCon>
   );
