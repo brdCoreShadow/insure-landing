@@ -1,0 +1,70 @@
+
+@font-face {
+  font-family: "DMSerif";
+  src: url("./assets/fonts/DM_Serif_Text/DMSerifText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+ font-family: sans-serif;
+}
+
+ul, ol,
+nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  text-decoration: none;
+  font-family: "DMSerif";
+}
+
+p, a, button, input, label{
+  font-family: "Karla";
+}
+
+input {
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+}
+img {
+  display: block;
+  box-sizing: border-box;
+max-width: 100%;
+  height: auto;
+}
+button {
+ padding:0;
+  border: none;
+}
+
