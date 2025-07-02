@@ -2,7 +2,10 @@ import styled from "@emotion/styled";
 
 export const OurCompanyCon = styled.div`
   margin-top: 40px;
-  
+
+  @media (min-width: 1280px) {
+    margin-top: 0;
+  }
   & > h4 {
     margin-bottom: 36px;
 
@@ -25,5 +28,15 @@ export const OurCompanyItem = styled.li`
 
     color: #2d2641;
     text-decoration: none;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+
+      cursor: pointer;
+
+    }
   }
 `;
