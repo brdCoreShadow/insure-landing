@@ -1,5 +1,6 @@
 import * as SC from "./DesknavStyled"
 
+// fixing
 const NavDesk:React.FC = () => {
     return ( 
         <SC.DeskNavCon>
