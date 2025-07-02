@@ -1,4 +1,4 @@
-import * as SC from "./DesknavStyled"
+import * as SC from "./DesknavStyled.ts"
 
 
 const NavDesk:React.FC = () => {
