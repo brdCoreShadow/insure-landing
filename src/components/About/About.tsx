@@ -8,7 +8,7 @@ const About = () => {
     <SC.AboutCon>
       <SC.AboutLine></SC.AboutLine>
       <SC.AboutTitle>We’re different</SC.AboutTitle>
-      <ul>
+      <SC.AboutList>
         <SC.AboutItem>
           <SC.AboutIconThumb>
             <img src={snappyProcessIcon} alt="snappyProcessIcon" />
@@ -45,7 +45,7 @@ const About = () => {
             </p>
           </SC.AboutItemContent>
         </SC.AboutItem>
-      </ul>
+      </SC.AboutList>
     </SC.AboutCon>
   );
 };
