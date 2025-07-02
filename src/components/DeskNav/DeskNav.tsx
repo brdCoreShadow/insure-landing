@@ -1,9 +1,10 @@
 import * as SC from "./DesknavStyled"
 
-// fixing
+
 const NavDesk:React.FC = () => {
     return ( 
         <SC.DeskNavCon>
+            <div></div>
             <SC.NavDeskList>
                 <SC.NavDeskItem>
                     <a href="#">how we work</a>
